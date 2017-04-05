@@ -7,7 +7,7 @@ Largely inspired by [Git Style Guide](https://github.com/agis-/git-style-guide).
 
 1. [Branches](#branches)
 2. [Commits](#commits)
-3. [Misc.](#misc)
+3. [Misc](#misc)
 
 ## Branches
 
@@ -16,24 +16,24 @@ Largely inspired by [Git Style Guide](https://github.com/agis-/git-style-guide).
 - Choose *short* and *descriptive* names:
 
     ```shell
-    # good
+    # Good
     $ git checkout -b feature/add-contact-forms
 
-    # bad - too vague
+    # Bad - too vague
     $ git checkout -b feature/language_fix
     ```
 
-- Use *dashes* to separate words. 
+- Use *dashes* instead of *underscores* to separate words.
 
 - Use a forward slash to categorize your branch:
     
     ```shell
-    # good
+    # Good
     $ git checkout -b feature/add-contact-forms
     $ git checkout -b hotfix/2545-stylebook-teaser-links
     $ git checkout -b release/1.3.2 
 
-    # bad - not categorized in git guis (Tower, Sourcetree, ...)
+    # Bad - not categorized in Git GUIs (Tower, SourceTree, ...)
     $ git checkout -b feature-some-changes
     $ git checkout -b hotfix-no-number
     $ git checkout -b release-20171204-somechange
@@ -52,8 +52,8 @@ Largely inspired by [Git Style Guide](https://github.com/agis-/git-style-guide).
 
 ## Commits
 
-- Each commit should be a single *logical change*. Don't make several *logical changes* in one commit. 
-  For example, if a patch fixes a bug and optimizes the performance of a feature, split it into two separate commits.
+- Each commit should be a single *logical change*. Don't make several logical changes in one commit. 
+  For example, if a patch fixes a bug and optimizes the performance of a certain feature, split it into two separate commits.
 
   *Tip: Use `git add -p` to interactively stage specific portions of the
   modified files.*
@@ -65,30 +65,30 @@ Largely inspired by [Git Style Guide](https://github.com/agis-/git-style-guide).
 - Commit *early* and *often*. Small, self-contained commits are easier to
   understand and revert when something goes wrong.
 
-- Commits should be ordered *logically*. For example, if *commit X* depends
-  on changes done in *commit Y*, then *commit Y* should come before *commit X*.
+- Commits should be ordered *logically*. For example, if `commit X` depends
+  on changes done in `commit Y`, then `commit Y` should come before `commit X`.
 
-Note: While working alone on a local branch that *has not yet been pushed*, it's
+Note: While working alone on a local branch that has not yet been pushed, it is 
 fine to use commits as temporary snapshots of your work. However, it still
 holds true that you should apply all of the above *before* pushing it.
 
 
-- The summary line (ie. the first line of the message) should be
+- The summary line (the first line of the message) should be
   *descriptive* yet *succinct*. Ideally, it should be no longer than
-  *50 characters*. It should be capitalized and written in imperative present
+  50 characters. It should be capitalized and written in imperative present
   tense. It should not end with a period since it is effectively the commit
-  *title*:
+  title:
 
   ```shell
-  # good - imperative present tense, capitalized, fewer than 50 characters
+  # Good - imperative present tense, capitalized, fewer than 50 characters
   Mark huge records as obsolete when clearing hinting faults
 
-  # bad
+  # Bad
   fixed ActiveModel::Errors deprecation messages failing when AR was used outside of Rails.
   ```
 
-- After that should come a blank line followed by a more thorough
-  description. It should be wrapped to *72 characters* and explain *why*
+- After this summary there should be a blank line followed by a more thorough
+  description. This description is wrapped up to 72 characters and explains *why*
   the change is needed, *how* it addresses the issue and what *side-effects*
   it might have.
 
@@ -110,31 +110,30 @@ holds true that you should apply all of the above *before* pushing it.
 
   - Bullet points are okay, too
 
-  - Use a hyphen or an asterisk for the bullet,
-    followed by a single space, with blank lines in
+  - Use a hyphen or an asterisk for the bullets,
+    followed by a single space with blank lines in
     between
 
-  Source http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+  Source: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
   ```
 
   Ultimately, when writing a commit message, think about what you would need
   to know if you run across the commit in a year from now.
 
-## Misc.
+## Misc
 
 - There are various workflows and each one has its strengths and weaknesses.
-  Whether a workflow fits your case, depends on the team, the project and your
+  Whether a workflow fits your case depends on the team, the project and your
   development procedures.
 
 - *Be consistent.* This is related to the workflow but also expands to things
-  like commit messages, branch names and tags. Having a consistent style
-  throughout the repository makes it easy to understand what is going on by
-  looking at the log, a commit message etc.
+  like commit messages, branch and tag naming. Having a consistent style
+  throughout the repository makes it easy for other people to understand what is 
+  going on by looking at the log, a commit message etc.
 
-- *Test before you push.* Do not push half-done work.
+- *Test before you push.* Do not push half-done work!
 
 
 # Inspired by
 
-Agis Anastasopoulos / [@agisanast](https://twitter.com/agisanast) / http://agis.io
-... and [contributors](https://github.com/agis-/git-style-guide/graphs/contributors)!
+Agis Anastasopoulos / [@agisanast](https://twitter.com/agisanast) / http://agis.io and [contributors](https://github.com/agis-/git-style-guide/graphs/contributors)!

@@ -5,11 +5,11 @@ Inspired by [Codeguide](http://codeguide.co/)
 ## Syntax
 
 - Use [Dotfiles](https://github.com/Netural/frontend-resources/blob/master/dotfiles/README.md)
-- Nested elements should be indented once
-- Always use double quotes, never single quotes, on attributes
-- Don't include a trailing slash in self-closing elements—the HTML5 spec says they're optional.
-- Don't omit optional closing tags (e.g. `</li>` or `</body>`)
-- Use the HTML5 doctype `<!DOCTYPE html>` 
+- Nested elements should be indented once.
+- Always use double quotes on attributes!
+- Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional.
+- Don't omit optional closing tags (e.g. `</li>` or `</body>`).
+- Use the HTML5 doctype `<!DOCTYPE html>`.
 
 ```HTML
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ Inspired by [Codeguide](http://codeguide.co/)
 ```
 ## Language attribute
 
-From the [HTML5 spec](http://w3c.github.io/html/semantics.html#the-html-element)
+From the [HTML5 spec](http://w3c.github.io/html/semantics.html#the-html-element):
 
 > Authors are encouraged to specify a lang attribute on the root html element, giving the document’s language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.
 
@@ -76,18 +76,18 @@ Per HTML5 spec, typically there is no need to specify a `type` when including CS
 
 ### Location of includes
 
-- Consider a above-the-fold CSS file
+- Consider a above-the-fold CSS file.
 - *Always* include JavaScript files on the bottom of a page. 
-- We try to streamline the including as good as possible in the boilerplates
+- We try to streamline the including as good as possible in the boilerplates.
 
 ## Boolean attributes
 
-A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.
+A boolean attribute is one that needs no declared value. XHTML requires you to declare a value, but HTML5 has no such requirement.
 For further reading, consult the WhatWG section on boolean attributes:
 
 > The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.
 
-If you *must* include the attribute's value, and **you don't need** to, follow this WhatWG guideline:
+If you *must* include a attribute's value, and **you don't need** to, follow this WhatWG guideline:
 
 > If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.
 
@@ -119,7 +119,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 
 ## JavaScript generated markup
 
-Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible. Use serverside rendering or if not possible at least choose a JS templating library ([Handlebars](http://handlebarsjs.com/) preferred).
+Writing markup in JavaScript makes the content harder to find, edit and maintain. Furthermore, it is way less performant. Avoid whenever possible. Use serverside rendering or if not possible at least choose a JS templating library ([Handlebars](http://handlebarsjs.com/) preferred).
 
 ## Links
 

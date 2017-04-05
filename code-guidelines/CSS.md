@@ -4,7 +4,7 @@
 - [Directory Structure](#directory-structure)
 - [BEM](http://getbem.com/) Block Element Modifier
 - [BEM in the wild](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
-- [SASS/SCSS](http://sass-lang.com/guide) We are using SCSS.
+- [SASS/SCSS](http://sass-lang.com/guide) We are using SCSS
 - [CSS Reference](http://tympanus.net/codrops/css_reference/) extensive reference for CSS properties
 
 ## BEM
@@ -55,12 +55,12 @@
 
 ## Directory Structure
 
-We are using a folder structure similar to [SMACSS](https://smacss.com/).
+We are using a folder structure similar to [SMACSS](https://smacss.com/):
 
-- `main.scss`: Center of the styling universe. Includes all internal and external styles (from node_modules).
-- `base`: All [base rules](https://smacss.com/book/type-base) & [layout rules](https://smacss.com/book/type-layout)
+- `main.scss`: Center of the styling universe. Includes all internal and external styles (like node_modules or bower_components).
+- `base`: All [base rules](https://smacss.com/book/type-base) & [layout rules](https://smacss.com/book/type-layout).
 - `components`: Each component deserves an own file where its [module rules](https://smacss.com/book/type-module) and [state rules](https://smacss.com/book/type-state) go. Mind the underscore in the filename, which marks it as an include, so SASS won't generate an own .css file for every component.
-- `util`: Variable definitions (also overrides for included styles from node_modules), SASS Mixins and Patterns
+- `util`: Variable definitions (also overrides for included styles from node_modules), SASS Mixins and Patterns.
 
 ```
 +-- base
