@@ -1,11 +1,22 @@
 # CSS
 
 ## Table of Contents
-- [Directory Structure](#directory-structure)
+- [General](#general)
 - [BEM](http://getbem.com/) Block Element Modifier
 - [BEM in the wild](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+- [Directory Structure](#directory-structure)
 - [SASS/SCSS](http://sass-lang.com/guide) We are using SCSS.
 - [CSS Reference](http://tympanus.net/codrops/css_reference/) extensive reference for CSS properties
+
+## General
+
+- Avoid ids, use classes instead.
+- Always add a trailing semicolon after properties: `color: teal;`
+- Avoid selector duplicates ([Details](https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-mergeable-selectors.md)).
+- Indent with 4 spaces.
+- Add a space before a brace ([Details](https://github.com/sasstools/sass-lint/blob/master/docs/rules/space-before-brace.md)).
+- Add an empty line between blocks ([Details](https://github.com/sasstools/sass-lint/blob/master/docs/rules/.empty-line-between-blocks.md)).
+- For details check the `.sass-lint.yml` file in the boilerplate
 
 ## BEM
 
