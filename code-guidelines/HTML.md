@@ -57,28 +57,19 @@ Quickly and easily ensure proper rendering of your content by declaring an expli
 </head>
 ```
 
-## CSS and JavaScript includes
+## data attributes
 
-Per HTML5 spec, typically there is no need to specify a `type` when including CSS and JavaScript files as `text/css` and `text/javascript` are their respective defaults.
+- Prefix your custom data attributes with `data-` (it's valid HTML).
+- Use [kebabCase](http://wiki.c2.com/?KebabCase) (All lowercase with - separating words).
 
 ```HTML
-<!-- External CSS -->
-<link rel="stylesheet" href="code-guide.css">
 
-<!-- In-document CSS -->
-<style>
-  /* ... */
-</style>
+<!-- good -->
+<span data-tooltip="Hey!">nice greeting</span>
 
-<!-- JavaScript -->
-<script src="code-guide.js"></script>
+<!-- bad -->
+<span tooltip="Nope">not so polite</span>
 ```
-
-### Location of includes
-
-- Consider a above-the-fold CSS file
-- *Always* include JavaScript files on the bottom of a page. 
-- We try to streamline the including as good as possible in the boilerplates
 
 ## Boolean attributes
 
@@ -116,6 +107,30 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 <!-- Better -->
 <img class="avatar" src="...">
 ```
+
+
+## CSS and JavaScript includes
+
+Per HTML5 spec, typically there is no need to specify a `type` when including CSS and JavaScript files as `text/css` and `text/javascript` are their respective defaults.
+
+```HTML
+<!-- External CSS -->
+<link rel="stylesheet" href="code-guide.css">
+
+<!-- In-document CSS -->
+<style>
+  /* ... */
+</style>
+
+<!-- JavaScript -->
+<script src="code-guide.js"></script>
+```
+
+### Location of includes
+
+- Consider a above-the-fold CSS file
+- *Always* include JavaScript files on the bottom of a page. 
+- We try to streamline the including as good as possible in the boilerplates
 
 ## JavaScript generated markup
 
