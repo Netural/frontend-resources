@@ -16,7 +16,8 @@
 - Indent with 4 spaces.
 - Add a space before a brace ([Details](https://github.com/sasstools/sass-lint/blob/master/docs/rules/space-before-brace.md)).
 - Add an empty line between blocks ([Details](https://github.com/sasstools/sass-lint/blob/master/docs/rules/.empty-line-between-blocks.md)).
-- For details check the `.sass-lint.yml` file in the boilerplate
+- For details check the `.sass-lint.yml` file in the boilerplate.
+- For above the fold CSS check the boilerplate `README.md`.
 
 ## BEM
 
