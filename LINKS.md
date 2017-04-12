@@ -2,16 +2,18 @@
 A collection of all the resources useful for every webdeveloper (not only at Netural)
 
 ## Table of Contents
+- [Guidelines](#guidelines)
 - [Essential Tools & Apps](#essential-tools--apps)
   - [Environment](#environment)
   - [IDEs & Texteditors](#ides--texteditors)
   - [Template Engines](#template-engines)
   - [Git](#git)
-  - [Fonts](#fonts)
   - [Others](#others)
-- [Guidelines](#guidelines)
-- [Other Apps](#other-apps)
-- [Online Tools](#online-tools)
+  - [Online Tools](#online-tools)
+- [Fonts](#fonts)
+
+## Guidelines
+- [Coding Guidelines](https://github.com/Netural/frontend-resources/tree/master/code-guidelines) Netural Coding Guidelines
 
 ## Essential Tools & Apps
 ### Environment
@@ -36,6 +38,8 @@ A collection of all the resources useful for every webdeveloper (not only at Net
 ### Template Engines
 - [Jade](https://jade-lang.com/) `npm install -g jade`
 - [Handlebars.js](http://handlebarsjs.com/) `npm install -g handlebars`
+- [Liquid](https://shopify.github.io/liquid/)
+- [Twig](http://twig.sensiolabs.org/)
 
 ### Git
 - [git](https://git-scm.com/) `brew install git`
@@ -44,21 +48,15 @@ A collection of all the resources useful for every webdeveloper (not only at Net
 - [GitHub for Desktop](https://www.git-tower.com/) GitHub Desktop is a seamless way to contribute to projects on GitHub and GitHub Enterprise.
 - [GitKraken](https://www.gitkraken.com/) The downright luxurious Git client, for Windows, Mac & Linux. Cross-platform, 100% standalone, and free.
 
-## Guidelines
-- [Coding Guidelines](https://github.com/Netural/frontend-resources/tree/master/code-guidelines) Netural Coding Guidelines
-
-### Fonts
-- [Fira Code](https://github.com/tonsky/FiraCode) Monospaced font with programming ligatures
-- [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) Monospaced font with programming ligatures
-
 ### Others
-- [Slack](https://slack.com/) A messaging app for teams.
 - [Xcode](https://developer.apple.com/xcode/download/) Xcode command line tools.
 - [Royal TSX](https://www.royalapplications.com/ts/osx/download) A good RDP Client for Mac & Windows.
-
-## Other Apps
 - [Image Optim](https://imageoptim.com/) Removes bloated metadata. Compressing images without losing quality.
 
-## Online Tools
+### Online Tools
 - [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts) A Hassle-Free Way to Self-Host Google Fonts
 - [Web App Manifest Generator](https://app-manifest.firebaseapp.com/) The Web App Manifest is a JSON document that provides application metadata for Progressive Web Apps.
+
+## Fonts
+- [Fira Code](https://github.com/tonsky/FiraCode) Monospaced font with programming ligatures
+- [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) Monospaced font with programming ligatures
