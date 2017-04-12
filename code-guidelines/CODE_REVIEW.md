@@ -7,7 +7,7 @@
 
 
 ## Having your code reviewed
-* Make it clear what needs to be reviewed. (MR Template)
+* General: Use the [Merge Request Template](https://github.com/Netural/netural-boilerplate/blob/master/.gitlab/merge_request/Merge%20Request.md)
 * Ask for special advises if needed (Is this approach in foo() good enough?)
 * Make sure your code is aligned with the [Netural Coding Guidelines](https://github.com/Netural/frontend-resources/tree/master/code-guidelines)
 
