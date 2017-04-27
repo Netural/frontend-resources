@@ -87,8 +87,8 @@ holds true that you should apply all of the above *before* pushing it.
   fixed ActiveModel::Errors deprecation messages failing when AR was used outside of Rails.
   ```
 
-- After this summary there should be a blank line followed by a more thorough
-  description. This description is wrapped up to 72 characters and explains *why*
+- After that should come a blank line followed by a more thorough 
+  description. It should be wrapped to *72 characters* and explain *why*
   the change is needed, *how* it addresses the issue and what *side-effects*
   it might have.
 

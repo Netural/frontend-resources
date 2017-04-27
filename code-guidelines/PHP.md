@@ -95,11 +95,8 @@ $myClass = new MyClass();
 ### Fields / Properties / Members
 
 - Declare fields `private` or `protected`.
-
 - **Never** declare a field `public`.
-
 - If you want a particular field to be accessible from the outside, let the IDE generate a getter function.
-
 - **Don't** generate Getters / Setters automatically for all existing fields, only generate getters or setters for use cases in which they are really needed!
 
 #### Type Information
@@ -128,11 +125,8 @@ class Note {
 ## Interfaces
 
 - Interface names are capitalized.
-
 - Commonly, append the word `Interface` at the end of the interface name.
-
 - Alternatively, prepend the character `I` before the actual interface name (not so common, but still okay).
-
 - Just be consistent with naming patterns throughout the project, don't mix different declaration styles!
 
 ```php
@@ -270,7 +264,6 @@ class Serializer implements SerializerInterface {
 
 ## Composer
 - Get composer from [getcomposer.com](https://getcomposer.org/) or install via Homebrew.
-
 - Never create a project which uses multiple dependencies without a composer setup. To avoid developer based headaches use a package manager to let them handle dependencies rather than handle them all by yourself!
 
 To create a project from scratch, just do:
