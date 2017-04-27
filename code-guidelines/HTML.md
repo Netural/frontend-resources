@@ -71,15 +71,12 @@ Quickly and easily ensure proper rendering of your content by declaring an expli
 <span tooltip="Nope">not so polite</span>
 ```
 
-<<<<<<< HEAD
 ### Location of includes
 
 - Consider a above-the-fold CSS file.
 - *Always* include JavaScript files on the bottom of a page. 
 - We try to streamline the including as good as possible in the boilerplates.
 
-=======
->>>>>>> 0e692c16ea9f48e7da1936f098c7979674105978
 ## Boolean attributes
 
 A boolean attribute is one that needs no declared value. XHTML requires you to declare a value, but HTML5 has no such requirement.
