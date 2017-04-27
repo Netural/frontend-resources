@@ -1,5 +1,17 @@
 # PHP
-In PHP we use the CamelCase Syntax.
+
+In PHP we use camelCase syntax.
+
+# Table of contents
+
+1. [Variables](#variables)
+2. [Strings](#strings)
+3. [Namespaces](#namespaces)
+4. [Classes and instances](#classes-and-instances)
+5. [Interfaces](#interfaces)
+6. [Functions and methods](#functions-and-methods)
+7. [Documentation and comments](#documentation-and-comments)
+8. [Composer](#composer)
 
 ## Variables
 
@@ -11,48 +23,49 @@ $myVar = 1;
 $mySecondVar = $myVar;
 ```
 
-### variables vs constants
-Use const if the value won't change.
-If your variable will change, use a normal `$var`.
+### Variables vs constants
+Use `const` if the value of the variable won't change.
+If your variable will change, use a regular `$var`.
 
 This will help others to understand your code more easily.
 
 #### Constants
-Constants are all-uppercase, with underscores to separate words.
+Constants are all-uppercase with underscores to separate words.
 
 ```php
-const API_HOST = 'https://api.example.com/'
+const API_EXAMPLE_HOST = 'https://api.example.com/'
 ```
 
 #### Variables
 Variables are named camelCase style.
 ```php
-$changingVariable = ''
+$changingVariable = '';
 ```
 
 ## Strings
-- Always use single quote declared strings with php. 
-- Do not rely on PHP's auto string interpolation with double-quoted strings, use string concatenation to achieve this.
-- Don't use double quotes for declaring strings.
+- Always use single quotations to declare strings in PHP!
+
+- Do not rely on PHP's auto string interpolation with double-quoted strings, use string concatenation for this purpose.
 
 [PHP String documentation including string parsing](http://php.net/manual/de/language.types.string.php)
 
 ```php
-// good
+// Good
 $good = 'Good';
 
-// also fine
+// Also fine
 $templateString = 'This string is '.$good;
 
-// bad
+// Bad
 $bad = "dont do that";
 
-// worse
+// Even worse
 $worse = "really $bad";
 ```
 
 ## Namespaces
-Namespaces in PHP are declared PascalCase (first character upper case) and you should try to put them according to your directory structure ([Battle of the autoloaders PSR-0 vs PSR-4](https://www.sitepoint.com/battle-autoloaders-psr-0-vs-psr-4/)).
+
+Namespaces in PHP are declared PascalCase (first character upper case) and you should try to adapt them according to your directory structure ([Battle of the autoloaders PSR-0 vs PSR-4](https://www.sitepoint.com/battle-autoloaders-psr-0-vs-psr-4/)).
 
 This file should be found in this directory: `Netural/Component/Serializer.php`
 
@@ -66,25 +79,28 @@ class Serializer {
 
 
 ## Classes and instances
-Classes are declared Pascal case.
+
+Classes are declared like interfaces PascalCase.
 
 ```php
-// class
+// Class
 class MyClass {
 
 }
 
-// instance
+// Instance
 $myClass = new MyClass();
 ```
 
 ### Fields / Properties / Members
+
 - Declare fields `private` or `protected`.
 - **Never** declare a field `public`.
-- If you want a field to be accessible from the outside, let the IDE generate a getter for this particular variable.
-- **Don't** generate Getters / Setters automatically for all the fields declared in your class, only generate getters / setter for those where you really need them.
+- If you want a particular field to be accessible from the outside, let the IDE generate a getter function.
+- **Don't** generate Getters / Setters automatically for all existing fields, only generate getters or setters for use cases in which they are really needed!
 
 #### Type Information
+
 Comment code with [PHPDocBlock](https://phpdoc.org/docs/latest/getting-started/your-first-set-of-documentation.html).
 
 ```php
@@ -95,50 +111,53 @@ class Note {
     private $title;
 
     /**
-     * @var string|null Contains the note body.
+     * @var string|null Contains the note body
      */
     private $body;
 
     /**
-     * @var Notebook Reference to the notebook this note belongs to
+     * @var Reference to the notebook this note belongs to
      */
-    private $notebook
+    private $notebook;
 }
 ```
 
 ## Interfaces
-- Interfaces start with an uppercase character.   
-- Either append the word `Interface` at the end of the interface name. (Very common)
-- Or prepend the character `I` before the interface name. (not so common, but still okay)
-- Be consistent with it in the project, don't mix the declarations in the same project.
+
+- Interface names are capitalized.
+- Commonly, append the word `Interface` at the end of the interface name.
+- Alternatively, prepend the character `I` before the actual interface name (not so common, but still okay).
+- Just be consistent with naming patterns throughout the project, don't mix different declaration styles!
 
 ```php
-// good and common
+// Good and common
 interface MyInterface {
 }
 
-// good and not so common
+// Good but not so common
 interface IMyInterface {
 }
 ```
 
+## Functions and methods
 
-## Functions & Methods
-Functions, Methods and Parameters start with a lowercase character.
+Functions, methods and parameters start with a lowercase character.
+
 ```php
-// function
+// Function
 function myFunc() {
 }
 
-// function with param
+// Function with param
 function mySecondFunc($parameterOne) {
 }
 
 class MyClass {
-  public function __construct($normalizers = [], $encoders = []])
+
+  public function __construct($normalizers = [], $encoders = []) {
   }
   
-  // methods  
+  // Methods  
   private privateMethod($anotherParameter) {
   }
   
@@ -149,8 +168,9 @@ class MyClass {
 
 ### Type information
 
-Whenever possible, use the power of type hinting and specify the type of object in the function parameter.
-This helps code linters, and your IDE to make your code safer, and tell you, where you could possibly mess up.
+Whenever possible, use the power of type hinting and specify the expected parameter type provide inside the function declaration.
+This ensures code linters to do their job (warn you about possible type conflicts) and it genreally makes the code more predictable and safer.
+
 ```php
 /**
  * [Description here]
@@ -172,28 +192,33 @@ function myFunc(MyInterface $objImplementingInterface) {
 ```
 
 
-## Documentation & Comments    
-Use PHPDocBlock Syntax in your comments so we can generate a documentation and VSCode understands it.   
+## Documentation and comments
+ 
+In order to generate a well structured documentation you should use PHPDocBlock syntax.
 
-**Single Line Comment**   
-For a single line comment always use the "//" characters not "/* */"
+**Single line comments**   
+For a single line comment always use double slashes `//` in favour of multi line comments `/* */`.
+
 ```php
-// My comment to describe the following line
-$str = 'Line that needs explanation';
+// My comment to describe a single following line
+$str = 'Line that needs explanation.';
 
-$strAnother = 'another string'; // this comment is also possible but less popular
+$strAnother = 'Another string.'; // This comment style is also possible but less popular
+
+/* Don't like this */
+$furtherStr = 'Antoher line that needs explanation.';
 ```
 
-**Block Comment**   
-Block comments are used for multi line comments. There are two types of usage of block comments:
-* Inline Block comments
+**Block comments**   
+Block comments are used for multi line comments. There are two types for block comment usage:
+* Inline block comments
 * Block comments for describing classes, functions, methods and interfaces
 
 ```php
 
-// Multi line comment to describe
-// the following line
-$str = 'Line that needs a lot explanation, and should probably get a better variable name';
+/* Multi line comment to describe
+   the following line */
+$str = 'Line that needs a lot of explanation and should get a better variable naming.';
 
 /**
  * My first interface.
@@ -230,27 +255,28 @@ class Serializer implements SerializerInterface {
      *
      * @return int Returns the number of elements.
      */
-    function count(array $items)
-    {
+    function count(array $items) {
         return count($items);
     }
 }
 
 ```
 
-## Composer ([getcomposer.com](https://getcomposer.org/))
-- Never create a project without a composer setup. 
-- This has been done in the old days, but since we are now in the future, always use package managers instead of handling dependencies yourself.
+## Composer
+- Get composer from [getcomposer.com](https://getcomposer.org/) or install via Homebrew.
+- Never create a project which uses multiple dependencies without a composer setup. To avoid developer based headaches use a package manager to let them handle dependencies rather than handle them all by yourself!
 
 To create a project from scratch, just do:
 ```bash
 composer init
 ```
-The wizard will guide you through the project-setup, name it correctly, and setup all your dependencies for you.
-[Browse dependencies - Packagist](https://packagist.org/)
+
+The wizard will guide you through the setup of the project, and sets up all your dependencies. For more information regarding the PHP package repository take a look at 
+[packagist.org](https://packagist.org/).
 
 ### Custom repository setup
-If the dependency you desire to have in your project can't be found through packagist (which i doubt) you have various other options to get the dependency into your project
-with composer.
 
+If the desired dependency you need in your project can't be found with Packagist various other options are available to register a custom dependency in your project with composer.
+
+More information and a comprehensive how to check out following link:
 [Composer repostories - VCS / Self hosted / direct Package](https://getcomposer.org/doc/05-repositories.md)
