@@ -1,0 +1,41 @@
+# https://github.com/sasstools/sass-lint/tree/master/docs/rules
+# 0 - turn off linting
+# 1 - warn when encountered
+# 2 - throw error when encountered
+options:
+  merge-default-rules: false
+  formatter: stylish
+  # Raise an error if more than 50 warnings are generated
+  max-warnings: 20
+  # Rule Configuration
+rules:
+  no-ids: 1
+  no-mergeable-selectors: 0
+
+  # match with .editorconfig
+  indentation:
+    - 2
+    -
+      size: 4
+  trailing-semicolon: 2
+
+  # Spacing
+  space-before-brace:
+    - 1
+    -
+      include: true
+  empty-line-between-blocks:
+    - 1
+    -
+      include: true
+
+  # BEM
+  class-name-format:
+    - 1
+    -
+      allow-leading-underscore: false
+      convention': 'hyphenatedbem'
+  bem-depth:
+    - 1
+    -
+      max-depth: 2

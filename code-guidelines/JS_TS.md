@@ -1,13 +1,23 @@
 # JavaScript/TypeScript
-In JavaScript/TypeScript we use the CamelCase Syntax    
+In JavaScript/TypeScript we use the lowerCamelCase Syntax
 * [Typescript Handbook](http://www.typescriptlang.org/docs/)
 
 ## Variables
 ### Naming
-Variables start with a lowercase character.
+Variables, properties and function names should use lowerCamelCase. They should also be descriptive. Single character variables and uncommon abbreviations should generally be avoided.
+
 ```typescript
 let myVar = 1;
 let mySecondVar = myVar;
+```
+
+### let vs const
+- If your variable will not change over time use `const`.
+- This will help others to understand your code more easily.
+- You can use UPPERCASE with underscores for `const`
+
+```typescript
+const API_PATH = 'https://...'
 ```
 
 ### Declaration
