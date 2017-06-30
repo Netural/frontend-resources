@@ -21,7 +21,6 @@ A collection of all the resources useful for every webdeveloper (not only at Net
 - [nodejs](https://nodejs.org) & npm `brew install node`
 - [bower](http://bower.io/) `npm install -g bower`
 - [gulp](http://gulpjs.com/) `npm install -g gulp-cli`
-- [grunt](http://gruntjs.com/) `npm install -g grunt-cli`
 - [typescript](http://www.typescriptlang.org/) `npm install -g typescript`
 - [typings](https://github.com/typings/typings) `npm install -g typings`
 - [ember-cli](http://ember-cli.com/) `npm install -g ember-cli`
@@ -45,11 +44,11 @@ A collection of all the resources useful for every webdeveloper (not only at Net
 - [git](https://git-scm.com/) `brew install git`
 - [Sourcetree](https://www.sourcetreeapp.com/) A free Git & Mercurial client for Windows or Mac.
 - [Tower](https://www.git-tower.com/) Version control with Git - made easy. In a beautiful, efficient, and powerful app.
-- [GitHub for Desktop](https://www.git-tower.com/) GitHub Desktop is a seamless way to contribute to projects on GitHub and GitHub Enterprise.
-- [GitKraken](https://www.gitkraken.com/) The downright luxurious Git client, for Windows, Mac & Linux. Cross-platform, 100% standalone, and free.
 
 ### Others
-- [Xcode](https://developer.apple.com/xcode/download/) Xcode command line tools.
+- [Xcode](https://developer.apple.com/xcode/download/) for developing iOS Apps and usage as a iOS Simulator for websites.
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads) Download plattform packages to get virtual maschines for testing
+- [Virtual windows maschines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) Download virtual windows maschines for VirtualBox
 - [Royal TSX](https://www.royalapplications.com/ts/osx/download) A good RDP Client for Mac & Windows.
 - [Image Optim](https://imageoptim.com/) Removes bloated metadata. Compressing images without losing quality.
 
