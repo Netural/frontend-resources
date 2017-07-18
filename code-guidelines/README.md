@@ -1,7 +1,7 @@
 # CODE GUIDELINES
 
 ## Table of Contents
-- [Accessibility](https://github.com/Netural/frontend-resources/blob/master/code-guidelines/Accessibility.md)
+- [Accessibility](https://github.com/Netural/frontend-resources/blob/master/code-guidelines/ACCESSIBILITY.md)
 - [Code Review](https://github.com/Netural/frontend-resources/blob/master/code-guidelines/CODE_REVIEW.md)
 - [CSS](https://github.com/Netural/frontend-resources/blob/master/code-guidelines/CSS.md)
 - [Git](https://github.com/Netural/frontend-resources/blob/master/code-guidelines/Git.md)
