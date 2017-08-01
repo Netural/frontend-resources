@@ -18,7 +18,7 @@ A collection of all the resources useful for every webdeveloper (not only at Net
 ## Essential Tools & Apps
 ### Environment
 - [brew](http://brew.sh/) `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- [nodejs](https://nodejs.org) & npm `brew install node`
+- [nvm](https://github.com/creationix/nvm#installation) for using multiple [nodejs](https://nodejs.org) versions on one machine. Please install a LTS (long term support) node.js version and the latest one and choose the latest one as default.
 - [bower](http://bower.io/) `npm install -g bower`
 - [gulp](http://gulpjs.com/) `npm install -g gulp-cli`
 - [typescript](http://www.typescriptlang.org/) `npm install -g typescript`
